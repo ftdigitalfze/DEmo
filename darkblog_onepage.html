@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Modern Dark Blog</title>
+
+  <!-- Skin Definition -->
+  <skin id="darkblog-skin">
+    <description>Single dark theme skin for DarkBlog</description>
+  </skin>
+
+  <style type="text/css">
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+    body {
+      background-color: #0a0a0a;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    a { color: #f5f5f5; text-decoration: none; }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #111;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    header .logo { font-size: 24px; font-weight: bold; color: #00bcd4; }
+
+    nav ul { display: flex; list-style: none; gap: 25px; }
+
+    nav ul li a { font-weight: 500; transition: 0.3s; }
+    nav ul li a:hover { color: #00bcd4; }
+
+    section { padding: 100px 50px; min-height: 100vh; }
+
+    .hero { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: #111; }
+    .hero h1 { font-size: 48px; margin-bottom: 20px; }
+    .hero p { font-size: 20px; max-width: 600px; }
+
+    .about, .services, .activity, .contact { max-width: 1200px; margin: auto; }
+    .section-title { text-align: center; margin-bottom: 50px; font-size: 36px; color: #00bcd4; }
+    .about p { text-align: center; font-size: 18px; max-width: 800px; margin: auto; }
+
+    .services-container { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+    .service-box { background: #1a1a1a; padding: 30px; border-radius: 10px; width: 250px; transition: transform 0.3s; }
+    .service-box:hover { transform: scale(1.05); }
+    .service-box h3 { margin-bottom: 15px; color: #00bcd4; }
+    .service-box p { font-size: 16px; }
+
+    .activity-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+    .post { background: #1a1a1a; border-radius: 10px; overflow: hidden; transition: transform 0.3s; }
+    .post:hover { transform: scale(1.02); }
+    .post img { width: 100%; height: 180px; object-fit: cover; }
+    .post-content { padding: 20px; }
+    .post-content h4 { color: #00bcd4; margin-bottom: 10px; }
+    .post-content p { font-size: 15px; color: #ccc; }
+
+    .contact p { text-align: center; font-size: 18px; }
+    footer { text-align: center; padding: 20px; background: #111; color: #777; }
+
+    @media(max-width:768px){ nav ul { flex-direction: column; gap: 15px; } header { flex-direction: column; gap: 10px; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">DarkBlog</div>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#activity">Activity</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Welcome to DarkBlog</h1>
+  <p>Your hub for digital marketing, trading insights, investment strategies, and web development services.</p>
+</section>
+
+<section id="about" class="about">
+  <h2 class="section-title">About</h2>
+  <p>DarkBlog is a modern platform sharing expertise in digital marketing, proprietary trading, investment strategies, and web development. We bring innovation, strategy, and practical tips for businesses and individuals alike.</p>
+</section>
+
+<section id="services" class="services">
+  <h2 class="section-title">Services</h2>
+  <div class="services-container">
+    <div class="service-box">
+      <h3>Digital Marketing</h3>
+      <p>SEO, social media management, and growth strategies tailored for your business.</p>
+    </div>
+    <div class="service-box">
+      <h3>Proprietary Trading</h3>
+      <p>Expert insights in crypto and forex trading for professional traders.</p>
+    </div>
+    <div class="service-box">
+      <h3>Investment Company</h3>
+      <p>Investing our own capital in high-potential opportunities across markets.</p>
+    </div>
+    <div class="service-box">
+      <h3>Web Development</h3>
+      <p>Custom websites for sale, development services, and business solutions online.</p>
+    </div>
+  </div>
+</section>
+
+<section id="activity" class="activity">
+  <h2 class="section-title">Activity</h2>
+  <div class="activity-container">
+    <div class="post">
+      <img src="https://via.placeholder.com/400x180?text=Digital+Marketing" alt="Digital Marketing" />
+      <div class="post-content">
+        <h4>Digital Marketing</h4>
+        <p>Discover innovative strategies to grow your business through targeted digital campaigns, social media, and SEO optimization.</p>
+      </div>
+    </div>
+    <div class="post">
+      <img src="https://via.placeholder.com/400x180?text=Proprietary+Trading" alt="VA Proprietary Trading" />
+      <div class="post-content">
+        <h4>VA Proprietary Trading</h4>
+        <p>Learn about high-performance crypto and forex trading techniques used by professional traders and institutions.</p>
+      </div>
+    </div>
+    <div class="post">
+      <img src="https://via.placeholder.com/400x180?text=Investment+Company" alt="Proprietary Investment Company" />
+      <div class="post-content">
+        <h4>Proprietary Investment Company</h4>
+        <p>Insights into investing our own capital, maximizing returns, and understanding market dynamics strategically.</p>
+      </div>
+    </div>
+    <div class="post">
+      <img src="https://via.placeholder.com/400x180?text=Web+Development" alt="Web Development" />
+      <div class="post-content">
+        <h4>Web Development</h4>
+        <p>Buy and sell websites or hire us for web development services. Professional solutions for modern online presence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="section-title">Contact</h2>
+  <p>Reach out via email or social media. (Contact form coming soon)</p>
+</section>
+
+<footer>
+  &copy; 2026 DarkBlog. All rights reserved.
+</footer>
+
+</body>
+</html>
